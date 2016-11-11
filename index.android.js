@@ -38,6 +38,9 @@ export default class Mohith extends Component {
           Welcome to {this.state.name}!
         </Text>
         <Text style={styles.instructions}>
+          You are typing: {this.state.text}
+        </Text>
+        <Text style={styles.instructions}>
           Learning apps now...
         </Text>
         <TextInput ref='text'
@@ -64,12 +67,13 @@ const styles = StyleSheet.create({
   },
   input: {
     width: 120,
-    fontSize: 40,
+    fontSize: 30,
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 30,
     textAlign: 'center',
     margin: 10,
+    color: 'red',
   },
   instructions: {
     textAlign: 'center',
